@@ -1,0 +1,46 @@
+
+body{margin:0px}
+
+.head{
+    background-color:hsl(226, 64%, 60%);
+    color:white;
+    font-size:40px;
+    text-align:center;
+    padding: 30px;
+    font-family: fantasy;
+
+}
+    
+.intro{
+    background-color: rgb(182, 231, 182);
+    color:black;
+    font-size:16px;
+    text-align: center;
+    font-family: Lucida Console;
+}
+.main{background-color:#cee9e5; 
+    display:flex; /*左右排列*/
+    justify-content:center; /*水平對齊*/
+    flex-wrap:wrap;/*允許內部區塊向下排列*/
+    
+}    
+.box{background-color:azure; 
+    width:280px;
+    margin:10px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    #p1{text-decoration:underline; color:whitesmoke;background-color: salmon;}
+    #p2{text-decoration: underline;color:whitesmoke;background-color: cornflowerblue}
+    #p3{text-decoration: underline;color:whitesmoke;background-color: seagreen;}
+    #p4{text-decoration: underline;color:whitesmoke;background-color: rgb(195, 173, 219);}
+/*CSS Media Query*/
+@media (max-width:1250px){
+    /* 如果螢幕寬度小於1250px 套用這個區塊的設定 */
+    .box{width:45%}
+}
+
+@media (max-width:500px){
+    /* 如果螢幕寬度小於500px 套用這個區塊的設定 */
+    .box{width:90%}
+    .head{font-size: 24px;}
+}
